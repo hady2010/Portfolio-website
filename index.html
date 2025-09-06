@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammed Nassim Ebrahim | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              cairo: ['Cairo', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <script>
+      // Prevents flash of unstyled content (FOUC) for dark mode
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+    
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@19.1.1",
+        "react-dom": "https://aistudiocdn.com/react-dom@19.1.1"
+      }
+    }
+    </script>
+    <script type="module" crossorigin src="/Portfolio-website/assets/index-b31e5375.js"></script>
+    <link rel="stylesheet" href="/Portfolio-website/assets/index-0233762a.css">
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-900">
+    <div id="root">
+      <noscript>
+        <p style="text-align:center;margin-top:2rem;">This site requires JavaScript to run. Please enable JavaScript in your browser.</p>
+      </noscript>
+    </div>
+    
+  </body>
+</html>
